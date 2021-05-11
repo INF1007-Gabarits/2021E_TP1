@@ -2,27 +2,27 @@
 
 def additionner(a, b):
     # TODO: calculer somme de a et b
-    somme =
+    somme = None
 
     return somme
 
 def soustraire(a, b):
     # TODO: calculer différence entre a et b
-    difference =
+    difference = None
 
     return difference
 
 def multiplier(a, b):
     # TODO: calculer produit entre a et b
-    produit =
+    produit = None
 
     return produit
 
 def diviserAvecReste(a, b):
     # TODO: calculer quotient (ex: 5 / 2 = 2.5)
-    quotient =
+    quotient = None
     # TODO: calculer reste ( ex: 5 / 2 reste 1)
-    reste =
+    reste = None
 
     return quotient, reste
 

@@ -4,7 +4,7 @@
 
 ## Objectif
 
-Ce TP a pour objectif de vous introduire à l'algorithmie avec le langage de programmation Python. Celui-ci est composé de 4 parties, pour lesquelless vous devez compléter le code avec l'indicateur TODO.
+Ce TP a pour objectif de vous introduire à l'algorithmie avec le langage de programmation Python. Celui-ci est composé de 4 parties, pour lesquelless vous devez compléter le code avec l'indicateur `TODO`.
 
 Les parties sont en ordre de difficulté, donc je vous conseille de les faire en ordre 😉
 
@@ -18,19 +18,18 @@ Un code qui ne roule pas est un 0 automatique, alors testez votre code!!
 
 ## Consignes à respecter
 
-Tout d'abord, assurez-vous d'avoir lu le fichier instructions.md et d'avoir téléchargé les fichiers parties 1-4.py que vous devrez complété.
+Tout d'abord, assurez-vous d'avoir lu le fichier [Instructions.md](Instructions.md) et d'avoir téléchargé les fichiers parties 1-4.py que vous devrez complété.
 
 Aussi, vous ne pouvez pas importer d'autres librairies que celle qui sont déjà importées dans les fichiers.
 
 ## Rouler le code
 
-Une fois que vous aurez complété les parties 1, 2 et 3, vous pourrez rouler le code pour le tester. Lancez le fichier calculatrice.py afin de tester vos fonctions.
+Lancez le fichier calculatrice.py afin de tester vos fonctions.
 
 ## Partie 1: 1 pt par fonction
 
-Dans cette partie, il s'agira de compléter les fonctions additionner, soustraire, multiplier et diviserAvecReste.
-Il s'agit de fonctions de base pour vous familiariser avec les éléments des fonctions.
-Toutes les fonctions prennent en entrée 2 nombres, a et b, et retournent le résultat de l'opération. La fonction divisreAvecReste retourne deux éléments, le quotient (résultat de la division) et le reste.
+Dans cette partie, il s'agira de compléter les fonctions `additionner`, `soustraire`, `multiplier` et `diviserAvecReste`. Il s'agit de fonctions de base pour vous familiariser avec les éléments des fonctions.
+Toutes les fonctions prennent en entrée 2 nombres, a et b, et retournent le résultat de l'opération. La fonction `diviserAvecReste` retourne deux éléments, le quotient (résultat de la division) et le reste.
 La partie 1 se trouve dans le fichier partie1.py
 
 Voici des exemples d'exécution:
@@ -44,16 +43,16 @@ Voici des exemples d'exécution:
 
 ## Partie 2: 3 pts par fonction
 
-Dans cette partie, il s'agira de compléter les fonctions calculerMinutes, arrondir et calculerNombreA.
+Dans cette partie, il s'agira de compléter les fonctions `calculerMinutes`, `arrondir` et `calculerNombreA`.
 Il s'agit de fonctions un peu plus complexes.
 
-La fonction calculerMinutes prends en entrée des float représentant des nombres d'années, de mois, de jours, d'heures, de minutes et de secondes. Le but de la fonction est de calculer le nombre total de minutes que représentent cette durée. Par exemple:
+La fonction `calculerMinutes` prends en entrée des nombres représentant des nombres d'années, de mois, de jours, d'heures, de minutes et de secondes. Le but de la fonction est de calculer le nombre total de minutes que représentent cette durée. Par exemple:
 
 ```python
     nbMinutes = calculerMinutes(0, 8, 2, 3, 50, 30) # il y a nbMinutes = 348710.5 minutes dans 0 ans, 8 mois, 2 jours, 3 heures, 50 minutes et 30 secondes
 ```
 
-La fonction arrondir prend en entrée deux entiers, soit un nombre et un facteurArrondissement. Le but est d'arrondir le nombre au multiple le plus proche du facteurArrondissement. Par exemple:
+La fonction `arrondir` prend en entrée deux entiers, soit un nombre et un facteurArrondissement. Le but est d'arrondir le nombre au multiple le plus proche du facteurArrondissement. Par exemple:
 
 ```python
     arrondiA = arrondir(8, 3) # 8 arrondi à un facteur 3 vaut arrondiA = 9
@@ -64,7 +63,7 @@ La fonction arrondir prend en entrée deux entiers, soit un nombre et un facteur
 
 Regardez bien les commentaires pour vous aider dans la résolution de ce problème!
 
-La fonction calculerNombreA prend en entrée un mot et retourne un entier représentant le nombre de fois que le mot contient la lettre a. Par exemple:
+La fonction `calculerNombreA` prend en entrée un mot et retourne un entier représentant le nombre de fois que le mot contient la lettre a. Par exemple:
 
 ```python
     nbA = calculerNombreA("Ananas") # Ananas contient nbA = 3 fois la lettre a
@@ -73,9 +72,9 @@ La fonction calculerNombreA prend en entrée un mot et retourne un entier repré
 
 ## Partie 3: 4 pts par fonction
 
-Dans cette partie, il s'agira de compléter les fonctions opérationListe, enleverDoublons et calculerPosVitesseAChaqueTic. Il s'agit de fonctions plus difficiles, et vous n'avez pas la structure déjà faite en commentaires.
+Dans cette partie, il s'agira de compléter les fonctions `operationListe`, `enleverDoublons` et `calculerPosVitesseAChaqueTic`. Il s'agit de fonctions plus difficiles, et vous n'avez pas la structure déjà faite en commentaires.
 
-La fonction opérationListe prend en entrée une liste d'entiers et calcule une nouvelle liste selon la règle suivante:
+La fonction `opérationListe` prend en entrée une liste d'entiers et calcule une nouvelle liste selon la règle suivante:
 NouvelleListe_i est égal à 3 * listeA_i + 2 * B_i, le tout divisé par 6. Par exemple:
 
 ```python
@@ -84,14 +83,14 @@ NouvelleListe_i est égal à 3 * listeA_i + 2 * B_i, le tout divisé par 6. Par 
     listeC = operationListe(listeA, listeB) # listeC = [-1.167, -0.666, -0.166, 0.333]
 ```
 
-La fonction enleverDoublons prend en entrée une liste d'entiers et retourne une nouvelle liste sans qu'il y ait de nombres dupliqués. Vous devez réaliser ce problème en passant au travers la liste. Par exemple:
+La fonction `enleverDoublons` prend en entrée une liste d'entiers et retourne une nouvelle liste sans qu'il y ait de nombres dupliqués. Vous devez réaliser ce problème en passant au travers la liste. Par exemple:
 
 ```python
     listeA = [1,7,4,6,7,8,4,3,2,4,4,4,4,4]
     listeB = enleverDoublons(listeA) # listeB = [1, 7, 4, 6, 8, 3, 2]
 ```
 
-Finalement, la fonction calculerPosVitesseAChaqueCapture sert à calculer la vitesse et la position d'un véhicule après un certain nombre de tics. Elle prend en entrée _positionInit_ et  _vistesseInit_ qui représentent les conditions initiales du système. Elle prend également en entrée _acceleration_, qui devra être appliquée à la vitesse et à la position afin de trouver leurs valeurs finales. Finalement, elle prend en entrée _nbCaptures_, qui représente le nombre de captures qu'on fera, ainsi que _secondesEntreCaptures_, qui représente le nombre de secondes entre chaque capture.
+Finalement, la fonction `calculerPosVitesseAChaqueCapture` sert à calculer la vitesse et la position d'un véhicule après un certain nombre de tics. Elle prend en entrée _positionInit_ et  _vistesseInit_ qui représentent les conditions initiales du système. Elle prend également en entrée _acceleration_, qui devra être appliquée à la vitesse et à la position afin de trouver leurs valeurs finales. Finalement, elle prend en entrée _nbCaptures_, qui représente le nombre de captures qu'on fera, ainsi que _secondesEntreCaptures_, qui représente le nombre de secondes entre chaque capture.
 
 Pour chaque capture, on voudra donc sauvegarder la position et la vitesse à ce moment dans deux tableaux séparés. Les équations du MRUA, tirées d'[alloprof](https://www.alloprof.qc.ca/fr/eleves/bv/physique/les-equations-du-mrua-p1010), pourrons certainement vous aider:
 
@@ -112,7 +111,7 @@ Par exemple:
 
 ## Partie Bonus: 3 pts
 
-La partie 4 est un petit bonus FACULTATIF pour ceux qui voudraient un défi supplémentaire. Il s'agit de compléter la fonction rotationListe, qui fait tourner les éléments d'une liste vers la droite ou la gauche. Elle prend en entrée une liste d'entiers, un nombre qui indique combien de rotations on souhaite réaliser, et un booléen qui indique si on tourne vers la droite ou vers la gauche. Une rotation de 1 vers la droite signifie que tous les éléments de la liste se tassent d'une position vers la droite. Par exemple:
+La partie 4 est un petit bonus FACULTATIF pour ceux qui voudraient un défi supplémentaire. Il s'agit de compléter la fonction `rotationListe`, qui fait tourner les éléments d'une liste vers la droite ou la gauche. Elle prend en entrée une liste d'entiers, un nombre qui indique combien de rotations on souhaite réaliser, et un booléen qui indique si on tourne vers la droite ou vers la gauche. Une rotation de 1 vers la droite signifie que tous les éléments de la liste se tassent d'une position vers la droite. Par exemple:
 
 ```python
     listeA = [1,2,3,4,5]
