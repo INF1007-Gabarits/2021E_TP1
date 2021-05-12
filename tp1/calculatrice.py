@@ -85,7 +85,8 @@ operations = {
         "func": rotationListe,
         "operands": {
             "liste": list,
-            "rotation": int
+            "rotation": int,
+            "estVersDroite": bool
         }
     }
 }

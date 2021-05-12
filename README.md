@@ -52,6 +52,8 @@ La fonction `calculerMinutes` prends en entrée des nombres représentant des no
     nbMinutes = calculerMinutes(0, 8, 2, 3, 50, 30) # il y a nbMinutes = 348710.5 minutes dans 0 ans, 8 mois, 2 jours, 3 heures, 50 minutes et 30 secondes
 ```
 
+NOTE: On considère qu'un mois est 30 jours et une année est 365 jours
+
 La fonction `arrondir` prend en entrée deux entiers, soit un nombre et un facteurArrondissement. Le but est d'arrondir le nombre au multiple le plus proche du facteurArrondissement. Par exemple:
 
 ```python
@@ -80,7 +82,7 @@ NouvelleListe_i est égal à 3 * listeA_i + 2 * B_i, le tout divisé par 6. Par 
 ```python
     listeA = [1, 2, 3, 4]
     listeB = [5, 5, 5, 5]
-    listeC = operationListe(listeA, listeB) # listeC = [-1.167, -0.666, -0.166, 0.333]
+    listeC = operationListe(listeA, listeB) # listeC = [2.1666, 2.666, 3.166, 7.333]
 ```
 
 La fonction `enleverDoublons` prend en entrée une liste d'entiers et retourne une nouvelle liste sans qu'il y ait de nombres dupliqués. Vous devez réaliser ce problème en passant au travers la liste. Par exemple:
@@ -132,6 +134,9 @@ La partie 4 est un petit bonus FACULTATIF pour ceux qui voudraient un défi supp
     #  DEBUT      ->  ROTATION #1 -> ROTATION #2
     # [1,2,3,4,5] -> [2,3,4,5,1] -> [3,4,5,1,2]
 ```
+
+Quand vous utilisez la calculatrice, pour entrer la valeur de estVersDroite, utilisez 1 pour Vrai et 0 pour Faux, sinon vous
+aurez des problèmes de valeur!
 
 ## REMISE
 
